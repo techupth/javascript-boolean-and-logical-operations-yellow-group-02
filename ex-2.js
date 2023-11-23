@@ -7,6 +7,13 @@ let hasBoughtProductFromITCategory;
 let hasAttendedDiscountEvent;
 let isPlatinum;
 
-let hasPromotion;
+//John
+lastMonthPaidMoreThan4000 = true;
+isWeekday = true;
+hasBoughtProductFromITCategory = false;
+hasAttendedDiscountEvent = false;
+isPlatinum = false;
+
+let hasPromotion = (lastMonthPaidMoreThan4000 && isWeekday && !hasBoughtProductFromITCategory && hasAttendedDiscountEvent) || (isPlatinum);
 
 console.log(hasPromotion);
